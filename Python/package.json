@@ -1,0 +1,28 @@
+{
+  "name": "resume-workflow-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "crawl:zhaopin": "node scripts/zhaopin-resume-pdf.js",
+    "crawl:zhaopin-attachments": "node scripts/zhaopin-attachment-resumes.js",
+    "zhaopin:greet": "node scripts/zhaopin-auto-greeting.js",
+    "zhaopin:applicants": "node scripts/zhaopin-applicant-messages.js",
+    "zhaopin:sync-jobs": "node scripts/zhaopin-sync-jobs.js",
+    "analyze:downloaded": "node scripts/analyze-downloaded-resumes.js",
+    "send:email": "node scripts/send-email.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.1.1",
+    "nodemailer": "^9.0.0",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.60.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}

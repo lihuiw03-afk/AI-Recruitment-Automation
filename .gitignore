@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+Python/.zhaopin-browser-profile*/
+Python/*.sqlite*
+Python/uploads/
+Python/zhaopin-jobs.json
+Python/zhaopin-*-candidates.json
+Python/zhaopin-*-resumes/
